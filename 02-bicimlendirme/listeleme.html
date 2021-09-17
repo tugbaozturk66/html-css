@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listeleme Tagları</title>
+  </head>
+  <body>
+    <!-- ol numaralı liste ul numarasız noktalı li ise liste olusturuluyor-->
+    <ol>
+      <li>Beşiktaş</li>
+      <li>Galatasaray</li>
+      <li>Fenerbahçe</li>
+      <li>Trabzonspor</li>
+    </ol>
+
+    <ul>
+      <li>Beşiktaş</li>
+      <li>Galatasaray</li>
+      <li>Fenerbahçe</li>
+      <li>Trabzonspor</li>
+    </ul>
+
+    <!-- ul>li*5>b ile 5 tane b li liste olustur demek-->
+    <ol type="1" start="5">
+      <!--eger start ile rakam yazarsak starttan sonraki sayidan başlar liste-->
+      <li>
+        <b>Türkiye</b>
+        <ol>
+          <li>
+            İstanbul
+            <ol type="i">
+              <li>Adalar</li>
+              <li>Beşiktaş</li>
+              <li>Kadiköy</li>
+            </ol>
+          </li>
+          <li>İzmir</li>
+          <li>
+            Ankara
+            <ol type="i">
+              <li>Keçiören</li>
+              <li>Çankaya</li>
+              <li>Beypazarı</li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+
+      <li><b>Almanya</b></li>
+      <li><b>İngiltere</b></li>
+    </ol>
+  </body>
+</html>
