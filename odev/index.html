@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odev</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Kayıt Formu</h1>
+    <form action="server/kayit.js">
+      <input type="hidden" name="id" value="12345" />
+    Aşağıdaki kayıt formunu doldurunuz. En uygun şekilde form validasyonu
+    yapınız
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Adı</td>
+          <td>
+            <input type="text" required minlength="2" />
+          </td>
+          <td>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </td>
+          <td>Hobiler</td>
+          <td rowspan="2">
+            <input type="checkbox" name="futbol" id="futbol" />
+            <label for="futbol">Futbol </label> <br />
+            <input type="checkbox" name="basketbol" id="basketbol" />
+            <label for="basketbol">Basketbol</label> <br />
+            <input type="checkbox" name="voleybol" id="voleybol" />
+            <label for="voleybol">Voleybol</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Soyadı</td>
+          <td><input type="text" required minlength="2" /></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Cinsiyet</td>
+          <td>
+            <input type="radio" name="cinsiyet" id="erkek" />
+            <label for="erkek">Erkek</label>
+            <input type="radio" name="cinsiyet" id="kadin" />
+            <label for="kadin">Kadın</label>
+          </td>
+          <td></td>
+          <td>Profil Fotografı&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+          <td>
+            <input type="text" placeholder="dosya seciniz" />
+            <input type="file" />
+          </td>
+        </tr>
+        <tr>
+          <td>İlçe</td>
+          <td>
+            <label for="ilce"></label>
+            <select name="ilce" id="ilce">
+              <option value="1">Keçiören</option>
+              <option value="2">Çankaya</option>
+              <option value="3">Yenimahalle</option>
+              <option value="4">Mamak</option>
+              <option value="5">Altındağ</option>
+            </select>
+          </td>
+          <td></td>
+          <td>Doğum Tarihi</td>
+          <td><input type="date" /></td>
+        </tr>
+        <tr>
+          <td>Eposta</td>
+          <td><input type="text" /></td>
+          <td></td>
+          <td>Adres</td>
+          <td>
+            <textarea name="adres" id="adres" cols="30" rows="5"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>Kişisel Site</td>
+          <td><input type="text" /></td>
+          <td></td>
+          <td></td>
+          <td rowspan="2"><input type="button" value="Kayıt Ol" />
+        <input type="reset" value="Formu Temizle"></td>
+        </tr>
+        <tr>
+          <td>Telefon</td>
+          <td><input type="text" /></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
