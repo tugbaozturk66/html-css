@@ -1,0 +1,19 @@
+.kutu {
+  background-color: red;
+  text-align: center;
+  height: 200px;
+}
+.kutu b {
+  background-color: blue;
+  margin: auto;
+}
+.kutu2 {
+  margin-top: 20px;
+  background-color: red;
+}
+.kutu2 p {
+  background-color: blue;
+  width: 200px;
+  margin: auto;
+  text-align: center;
+}
